@@ -1,0 +1,16 @@
+.emoji-list-item {
+  text-align: center;
+  margin-bottom: 30px;
+  .emoji-char-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 20px;
+    .emoji-char {
+      font-size: 30px;
+    }
+  }
+}
