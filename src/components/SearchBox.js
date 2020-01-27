@@ -6,7 +6,6 @@ class SearchBox extends React.Component {
     const searchInput = document.querySelector('.j-typing-event');
     searchInput.addEventListener('keyup', (e) => {
       this.props.searchEmoji(e.target.value);
-      console.log(e.target.value);
     })
   }
   render() {

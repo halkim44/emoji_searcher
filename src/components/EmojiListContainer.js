@@ -8,7 +8,6 @@ class EmojiListContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { emojis: [], isFinishFetching: storedEmojiData.length !== 0 };
-    console.log(this);
   }
   getData() {
     this.setState({
@@ -29,7 +28,6 @@ class EmojiListContainer extends React.Component {
   }
   filterData() {
     if(this.props.searchFor.length > 0) {
-      console.log(this.props.searchFor);
       let dashedStr = this.props.searchFor.replace(' ', '-');
       let data = storedEmojiData.filter(obj => obj.slug.includes(dashedStr));
       this.setState({

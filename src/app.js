@@ -10,9 +10,6 @@ class App extends React.Component {
     this.state = { searchFor: '' };
     this.searchEmoji = this.searchEmoji.bind(this);
   }
-  componentDidMount() {
-    console.log(this);
-  }
   searchEmoji = str => {
     this.setState({
       searchFor: str
